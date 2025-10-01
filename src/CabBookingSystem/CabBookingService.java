@@ -6,7 +6,7 @@ public class CabBookingService extends Booking {
     static List<Cab> cabList = new ArrayList<>();
     static List<Booking> bookingList = new ArrayList<>();
     static int bookingCounter = 1;
-//the number of cabs and bookings is not fixed, and you need a dynamic, flexible way to store and manage them.
+  //  static int bookingCounter=2;
     CabBookingService(int bookingId, String customerName, Cab cab) {//constructor
         super(bookingId, customerName, cab);
     }
@@ -21,7 +21,7 @@ public class CabBookingService extends Booking {
         Scanner sc = new Scanner(System.in);
 
         while (true) {
-            System.out.println("\n--- Cab Booking Service ---");
+            System.out.println("--- Cab Booking Service ---");
             System.out.println("1. Book Cab");
             System.out.println("2. View Bookings");
             System.out.println("3. Exit");
